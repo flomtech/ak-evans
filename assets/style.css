@@ -15,6 +15,16 @@ body {
 	min-width: 100%;
 }
 
+html {
+	--hsl-h: 60;
+	--hsl-s: 50%;
+	--hsl-l: 50%;
+	--shadow-x: 0.1rem;
+	--shadow-y: 0.8rem;
+	--color-line: var(--color-dark);
+	--line-width: 2px;
+}
+
 .scroll-button {
 	padding-bottom: 10px;
 	padding-top: 10px;
