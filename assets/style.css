@@ -387,27 +387,3 @@ p {
 	margin-top: -10px;
 	padding: 6px;
 }
-
-/* Ui1 system design  */
-.u1-input {
-	display: inline-flex;
-	width: 13rem;
-	white-space: nowrap;
-}
-.u1-input > :not(:first-child) {
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-}
-.u1-input > :not(:last-child) {
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-}
-.u1-input > button {
-	flex: 0 1 auto;
-}
-.u1-input > input {
-	flex: 1 1 auto;
-	width: 4rem;
-}
-
-/* end of Ui1 system design  */
