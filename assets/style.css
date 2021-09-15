@@ -11,8 +11,17 @@ body {
 	padding-right: 30px;
 	background: url("./img/background.jpg");
 	background-size: cover;
-	width: 1000px !important;
 	min-width: 100%;
+}
+
+html {
+	--hsl-h: 60;
+	--hsl-s: 50%;
+	--hsl-l: 50%;
+	--shadow-x: 0.1rem;
+	--shadow-y: 0.8rem;
+	--color-line: var(--color-dark);
+	--line-width: 2px;
 }
 
 .scroll-button {
@@ -54,7 +63,7 @@ body {
 	font-size: 50px;
 	color: white;
 	margin-top: 50px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .sub-title {
@@ -97,24 +106,6 @@ body {
 }
 .box7 {
 	background-color: purple;
-}
-
-.night-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: stretch;
-}
-
-.night-box {
-	width: 40rem;
-}
-
-.night-box1 {
-	background-color: red;
-}
-.night-box2 {
-	background-color: orange;
 }
 
 .die-container {
@@ -213,7 +204,24 @@ section-2 {
 	width: 50%;
 }
 
-.carousel-container {
+.night-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+.night-box {
+	width: 20rem;
+	padding: 1rem;
+	position: relative;
+	background-color: rgb(68, 63, 63);
+	margin-bottom: 1rem;
+}
+
+.spaced-container {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -222,18 +230,13 @@ section-2 {
 	padding: 1rem;
 }
 
-.carousel-box {
+.spaced-box {
 	width: 20rem;
 	padding: 1rem;
 	position: relative;
 	background-color: rgb(68, 63, 63);
+	margin-bottom: 1rem;
 }
-
-/* 
-
-.carousel-box1 { background-color: rgb(68, 63, 63); }
-.carousel-box2 { background-color: orange; }
-.carousel-box3 { background-color: purple; } */
 
 .slide-container {
 	display: flex;
