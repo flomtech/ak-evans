@@ -15,9 +15,9 @@ body {
 }
 
 html {
-	--hsl-h: 60;
-	--hsl-s: 50%;
-	--hsl-l: 50%;
+	--hsl-h: 206;
+	--hsl-s: 47.9%;
+	--hsl-l: 63.1%;
 	--shadow-x: 0.1rem;
 	--shadow-y: 0.8rem;
 	--color-line: var(--color-dark);
