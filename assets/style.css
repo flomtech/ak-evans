@@ -7,8 +7,14 @@ html {
 	--color-text:#002642;
 	--color-bg:#fff;
 
-	--width: 60em;
+	--width: 50em;
 }
+
+input, select, textarea {
+	border-radius:0;
+	box-shadow:0 0 .4rem #0008;
+}
+
 button {
 	text-transform:uppercase;
 	border-radius:3em;
@@ -38,11 +44,34 @@ button:hover:not([disabled])::after {
 	box-shadow:0 0 1.2rem #000f;
 }
 
+section {
+	padding-top:2rem;
+	padding-bottom:2rem;
+}
+
+
+/* classes */
+.cd-dark {
+	background-color:var(--color-text);
+	color:#fff;
+}
+.cd-dark h2 {
+	color:var(--color);
+}
+.cd-dark input,
+.cd-dark select,
+.cd-dark textarea {
+	background-color:#17405E;
+	color:#fff;
+}
+
+
 
 /* header  */
 #head {
 	position:relative;
 	color:#fff;
+	padding-bottom:3rem;
 }
 #head nav {
 	border-bottom: 1px solid;
