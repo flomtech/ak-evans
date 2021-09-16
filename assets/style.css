@@ -18,10 +18,10 @@ html {
 	--hsl-h: 206;
 	--hsl-s: 47.9%;
 	--hsl-l: 63.1%;
-	--shadow-x: 0.1rem;
-	--shadow-y: 0.8rem;
-	--color-line: var(--color-dark);
-	--line-width: 2px;
+
+	--color-text:#002642;
+	--color-bg:#fff;
+
 }
 
 .scroll-button {
