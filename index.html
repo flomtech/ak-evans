@@ -13,7 +13,7 @@
 		<script type="module" src="https://cdn.jsdelivr.net/gh/u1ui/u1@1.8.8/auto.min.js"></script>
 	</head>
 	<body>
-		<div class="test-background section-1" style="position: relative; padding-bottom: 0px">
+		<header style="position: relative; padding: 1rem">
 			<div class="nav">
 				<div class="nav-btn">
 					<label for="nav-check">
@@ -33,47 +33,49 @@
 						><i class="fa fa-user"></i> FACHHÄNDLER REGISTRIERUNG</a
 					>
 				</div>
-				<hr class="hr" />
 			</div>
+		</header>
 
-			<div style="padding: 1px">
-				<p class="white-text">Nachts tragen – tagsüber sehen: Ohne Brille, ohne Linsen</p>
+		<div style="padding: 1rem" class="test-background section-1">
+			<p class="white-text">Nachts tragen – tagsüber sehen: Ohne Brille, ohne Linsen</p>
 
-				<h1 class="title">i-Night</h1>
+			<h1 class="title">i-Night</h1>
 
-				<h6 class="sub-title">
-					Nachts tragen – tagsüber sehen:<br />
-					Ohne Brille, ohne Linsen
-				</h6>
+			<h6 class="sub-title">
+				Nachts tragen – tagsüber sehen:<br />
+				Ohne Brille, ohne Linsen
+			</h6>
 
-				<div class="btn-container">
-					<button
-						aria-label="Scroll to the bottom of the Page"
-						id="scroll-to-bottom"
-						class="btn-style btn"
-					>
-						Scroll <i class="fa fa-arrow-down"></i>
-					</button>
-				</div>
+			<div class="btn-container">
+				<button
+					aria-label="Scroll to the bottom of the Page"
+					id="scroll-to-bottom"
+					class="btn-style btn"
+				>
+					Scroll <i class="fa fa-arrow-down"></i>
+				</button>
 			</div>
+		</div>
 
-			<div style="padding: 0px; display: inline-block; position: absolute; top: 10%; left: 80%">
-				<div style="position: relative">
-					<div
-						style="
-							width: 50px;
-							height: 50px;
-							position: absolute;
-							border-radius: 100%;
-							top: 0%;
-							border: 1px solid white;
-							left: 90%;
-						"
-					></div>
-					<div style="font-size: 2rem">appenzeller</div>
-					<div style="font-size: 2rem">kontaktlinsen</div>
-					<div style="float: right">passt</div>
-				</div>
+		<div
+			class="left-section"
+			style="padding: 0px; display: inline-block; position: absolute; top: 12%; left: 80%"
+		>
+			<div style="position: relative">
+				<div
+					style="
+						width: 50px;
+						height: 50px;
+						position: absolute;
+						border-radius: 100%;
+						top: 0%;
+						border: 1px solid white;
+						left: 90%;
+					"
+				></div>
+				<div style="font-size: 2rem">appenzeller</div>
+				<div style="font-size: 2rem">kontaktlinsen</div>
+				<div style="float: right">passt</div>
 			</div>
 		</div>
 
@@ -579,7 +581,6 @@
 				</div>
 			</div>
 		</div>
-
 		<script>
 			(() => {
 				document.getElementById("scroll-to-bottom").addEventListener("click", () => {
