@@ -3,12 +3,12 @@ body {
 	font-family: "segoe ui";
 	padding-left: 30px;
 	padding-right: 30px;
-	background: url("./img/background.jpg");
+	background: #fde8e9;
 	background-size: cover;
 	min-width: 100%;
 }
 
-html {
+/* html {
 	--hsl-h: 60;
 	--hsl-s: 50%;
 	--hsl-l: 50%;
@@ -16,7 +16,7 @@ html {
 	--shadow-y: 0.8rem;
 	--color-line: var(--color-dark);
 	--line-width: 2px;
-}
+} */
 
 .btn-style {
 	background-color: rgb(94, 94, 252);
@@ -32,6 +32,10 @@ html {
 .btn-container {
 	margin-top: 50px;
 	margin-bottom: 50px;
+}
+
+button {
+	background: #793ae5 !important;
 }
 
 .die-container {
@@ -89,6 +93,13 @@ html {
 
 .white-text {
 	color: white;
+}
+.dark-text {
+	color: #132842;
+}
+
+.dark-text-lighter {
+	color: #3c3948;
 }
 
 .test-background {
@@ -246,7 +257,7 @@ h2 {
 }
 
 .die-content {
-	background-color: rgb(95, 18, 18) !important;
+	background-color: #3c3948;
 	width: 100% !important;
 	height: 100% !important;
 	color: white;
