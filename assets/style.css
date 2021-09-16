@@ -159,16 +159,23 @@ html {
 	background-size: cover;
 }
 
-/* nav links  */
+/* header  */
 
-.nav-links a {
+header {
+	color:#fff;
+}
+header nav > ul {
+	display:flex;
+}
+
+header nav a {
 	color: inherit;
 	text-decoration: none;
 	font-weight: 800;
 	margin-right: 30px;
 }
 
-/* end of nav links  */
+/* end header  */
 
 .section-1 {
 	height: 80vh;
