@@ -312,3 +312,9 @@ h2 {
 	margin-top: -25px !important;
 	padding: 6px !important;
 }
+
+.intro-text {
+	font-weight: normal;
+	font-size: 2.2rem;
+	word-spacing: 0.2rem;
+}
