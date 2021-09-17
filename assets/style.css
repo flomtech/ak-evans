@@ -266,16 +266,16 @@ h2 {
 	position: absolute;
 	height: 2rem !important;
 	width: 2rem !important;
-	background: white;
+	background: rgb(135, 183, 245);
 	top: 0px;
-	left: 50%;
+	left: 90%;
 	border-radius: 100%;
 	margin-top: -15px;
 	padding: 8px;
 	padding-top: 5px;
 }
 .round-box > i {
-	color: black;
+	color: white;
 	transform: rotate(90deg);
 }
 .die-content {
