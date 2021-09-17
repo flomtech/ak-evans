@@ -289,6 +289,15 @@ h2 {
 .box-content {
 	position: relative;
 }
+
+.left-section {
+	text-align: left;
+	width: 15rem;
+	margin: 5rem;
+	position: absolute;
+	top: 10%;
+	left: 60%;
+}
 @media only screen and (max-width: 1026px) {
 	.left-section {
 		display: none !important;
