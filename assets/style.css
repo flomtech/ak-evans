@@ -221,8 +221,27 @@ section-2 {
 	width: 100rem;
 	margin-bottom: 10rem;
 	margin-top: 10px;
-	text-align: center;
 	margin: auto;
+	padding-left: 3rem;
+	text-align: left;
+}
+
+.wide-slide-box3 > p {
+	text-align: left;
+	padding-bottom: 5rem;
+	padding-top: 2rem;
+	font-size: 3rem;
+	letter-spacing: 0.007rem;
+	color: brown;
+}
+
+.wide-slide-box3 > button {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.wide-slide-box3 i {
+	padding-left: 2rem;
 }
 
 .wide-slide-box1 {
@@ -274,6 +293,7 @@ h2 {
 	padding: 8px;
 	padding-top: 5px;
 }
+
 .round-box > i {
 	color: white;
 	transform: rotate(90deg);
@@ -342,4 +362,16 @@ h2 {
 	left: 80%;
 	top: 0px;
 	margin-top: -10px;
+}
+
+.natch-heading {
+	background: rgb(226, 199, 43);
+	font-size: 30px;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	border-radius: 1rem;
+}
+
+.lighter {
+	opacity: 0.8;
 }
