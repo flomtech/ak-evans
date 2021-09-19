@@ -126,7 +126,7 @@ section {
 }
 
 .dark-text-lighter {
-	color: #3c3948;
+	color: rgb(119, 143, 247);
 }
 
 .test-background {
@@ -180,9 +180,9 @@ section-2 {
 	text-align: center;
 	margin: auto;
 	border-radius: 100%;
-	padding: 3rem;
-	width: 70vh;
-	height: 70vh;
+	padding: 4rem;
+	width: 80vh;
+	height: 80vh;
 	margin-bottom: 3rem;
 }
 
@@ -364,14 +364,75 @@ h2 {
 	margin-top: -10px;
 }
 
-.natch-heading {
-	background: rgb(226, 199, 43);
-	font-size: 30px;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
-	border-radius: 1rem;
+.lighter {
+	opacity: 0.6;
 }
 
-.lighter {
-	opacity: 0.8;
+.natch-layer {
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+.natch-layer > div:first-child {
+	text-align: left;
+}
+
+.natch-layer > div:nth-child(2) > div {
+	height: 3px;
+	width: 100%;
+	margin: 1rem;
+}
+
+.natch-layer > div:last-child {
+	text-align: right;
+}
+
+.natch-layer > div > h2 {
+	margin: 0 !important;
+	padding: 0rem !important;
+}
+
+.natch-layer > div > p {
+	padding: 1rem;
+	font-size: 0.8rem;
+}
+
+.natch-layer > div > h2 > span {
+	background: rgb(226, 199, 43);
+	border-radius: 5px;
+	padding: 0.3rem;
+}
+.transparent-background {
+	background: transparent !important;
+}
+
+.passt {
+	font-size: 1.9rem;
+	color: white;
+}
+
+.passt > div:nth-child(1) {
+	float: left;
+}
+
+.passt > div:nth-child(2) {
+	width: 50px;
+	height: 50px;
+	border: 1px solid white;
+	float: left;
+	border-radius: 100%;
+	margin-left: 1rem;
+}
+
+.passt > div:nth-child(4) {
+	float: left;
+}
+
+.passt > div:nth-child(6) {
+	float: right;
+	font-size: 1rem !important;
+	padding-right: 1rem;
+}
+
+.relative-position {
+	position: relative;
 }
