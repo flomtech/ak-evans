@@ -87,19 +87,6 @@ section {
 	margin-right: 0;
 }
 
-.title {
-	font-size: 50px;
-	color: white;
-	margin-top: 50px;
-	margin-bottom: 10px;
-}
-
-.sub-title {
-	font-size: 30px;
-	color: white;
-	font-weight: normal;
-}
-
 .container {
 	display: flex;
 	flex-wrap: wrap;
@@ -129,11 +116,6 @@ section {
 	color: rgb(119, 143, 247);
 }
 
-.test-background {
-	background: url("./img/contact-mountain.png");
-	background-size: cover;
-}
-
 .night-pack-background {
 	background: url("./img/pexels-photo-2846764.jpeg");
 	background-size: cover;
@@ -144,27 +126,6 @@ section {
 }
 
 /* end header  */
-
-section-2 {
-	background: black;
-}
-
-.night-container {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 1rem;
-}
-
-.night-box {
-	width: 20rem;
-	padding: 1rem;
-	position: relative;
-	background-color: rgb(68, 63, 63);
-	margin-bottom: 1rem;
-}
 
 .slide-container {
 	display: flex;
