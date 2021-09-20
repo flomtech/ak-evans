@@ -9,7 +9,7 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 		<script type="module" src="https://cdn.jsdelivr.net/gh/u1ui/u1@1.8.8/auto.min.js"></script>
 	</head>
-	<body>
+	<body id='main-body' class="light-mode-theme">
 		<header class="cd-dark" id="head" style="opacity: 0.8">
 			<div class="u1-width">
 				<div class="u1-flex-gap">
@@ -28,6 +28,11 @@
 
 					<a style="padding-top: 0.5rem;color: white;">
 						<i class="fa fa-user"></i> FACHHÄNDLER REGISTRIERUNG
+						<select id='preferred_theme'>
+							<option value="normal-mode-theme">normal theme</option>
+							<option value="light-mode-theme">light theme</option>
+							<option value="dark-mode-theme">dark theme</option>
+						</select>
 					</a>
 
 
@@ -126,7 +131,7 @@
 			</div>
 		</section>
 
-		<div style="background: #fde8e9; padding: 2rem">
+		<div class='content-section' style="background-color: var(--primary-background); padding: 2rem">
 			<div class="heading">
 				<h2 class="dark-text align-text-center heading">Die häugsten Frgen</h2>
 			</div>
@@ -253,7 +258,7 @@
 			</ul>
 		</div>
 
-		<div style="background-color: #fde8e9">
+		<div class="content-section" style="background-color: var(--primary-background)">
 			<div>
 				<h2 class="dark-text align-text-center" style="padding: 2rem;">Die häugsten Frgen</h2>
 			</div>
@@ -544,10 +549,33 @@
 		</div>
 
 		<script>
+			var updateTheme = (theme_name)=>{
+				var mainBody = document.getElementById('main-body')
+				mainBody.className = theme_name
+				localStorage.setItem('preferred_theme',theme_name)
+			};
+
 			(function(){
 				const closeButton = document.getElementById('close-register')
 				closeButton.addEventListener('click',()=>{
 					document.getElementById('register-form').style.display = 'none';
 				})
 			})();
+
+
+			(function(setTheme){
+				themeBtn = document.getElementById('preferred_theme')
+				themeBtn.addEventListener('change',()=>{
+					setTheme(themeBtn.value)
+				})
+				document.addEventListener('DOMContentLoaded', function() {
+   						const theme = localStorage.getItem('preferred_theme')
+						if(theme === null || theme === undefined){
+							const default_theme = 'normal-mode-theme'
+							setTheme(default_theme)
+						}else{
+							setTheme(theme)	
+						}
+				}, false);
+			})(updateTheme);
 		</script>

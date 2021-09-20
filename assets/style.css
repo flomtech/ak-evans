@@ -1,3 +1,48 @@
+/* color modes */
+:root {
+	--bg: white;
+	--text: black;
+	--button-color: #4736f2;
+	--button-background-image: linear-gradient(to left, #783de5, #4736f2);
+	--primary-background: #a21a21;
+	--primary-color: #eeeded;
+}
+/* end of color modes */
+
+/* custom themes to override default variables */
+.dark-mode-theme {
+	--bg: black !important;
+	--text: white !important;
+	--button-color: #4736f2;
+	--button-background-image: linear-gradient(to left, #783de5, #4736f2);
+	--primary-background: #0c0b0b;
+	--primary-color: #eeeded;
+}
+
+.light-mode-theme {
+	--bg: rgb(200, 106, 243) !important;
+	--text: rgb(79, 29, 29) !important;
+	--button-color: #4736f2;
+	--button-background-image: linear-gradient(to left, #783de5, #4736f2);
+	--primary-background: rgb(218, 141, 253);
+	--primary-color: #eeeded;
+}
+
+.normal-mode-theme {
+	--bg: rgb(245, 244, 244) !important;
+	--text: rgb(19, 18, 18) !important;
+	--button-color: #4736f2;
+	--button-background-image: linear-gradient(to left, #783de5, #4736f2);
+	--primary-background: #ebdedf;
+	--primary-color: #090707;
+}
+/* end of custom themes to override default variables */
+
+body {
+	background: var(--bg);
+	color: var(--text);
+}
+
 /* global */
 html {
 	--hsl-h: 206;
@@ -18,7 +63,7 @@ textarea {
 button {
 	text-transform: uppercase;
 	border-radius: 3em;
-	background-color: #4736f2;
+	background-color: var(--button-color);
 	background-image: linear-gradient(to left, #783de5, #4736f2);
 	transition: background-position 0.5s;
 	position: relative;
@@ -396,4 +441,8 @@ h2 {
 
 .relative-position {
 	position: relative;
+}
+
+.content-section {
+	color: var(--primary-color);
 }
