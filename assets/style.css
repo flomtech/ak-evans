@@ -1,48 +1,3 @@
-/* color modes */
-:root {
-	--bg: white;
-	--text: black;
-	--button-color: #4736f2;
-	--button-background-image: linear-gradient(to left, #783de5, #4736f2);
-	--primary-background: #a21a21;
-	--primary-color: #eeeded;
-}
-/* end of color modes */
-
-/* custom themes to override default variables */
-.dark-mode-theme {
-	--bg: black !important;
-	--text: white !important;
-	--button-color: #4736f2;
-	--button-background-image: linear-gradient(to left, #783de5, #4736f2);
-	--primary-background: #0c0b0b;
-	--primary-color: #eeeded;
-}
-
-.light-mode-theme {
-	--bg: rgb(200, 106, 243) !important;
-	--text: rgb(79, 29, 29) !important;
-	--button-color: #4736f2;
-	--button-background-image: linear-gradient(to left, #783de5, #4736f2);
-	--primary-background: rgb(218, 141, 253);
-	--primary-color: #eeeded;
-}
-
-.normal-mode-theme {
-	--bg: rgb(245, 244, 244) !important;
-	--text: rgb(19, 18, 18) !important;
-	--button-color: #4736f2;
-	--button-background-image: linear-gradient(to left, #783de5, #4736f2);
-	--primary-background: #ebdedf;
-	--primary-color: #090707;
-}
-/* end of custom themes to override default variables */
-
-body {
-	background: var(--bg);
-	color: var(--text);
-}
-
 /* global */
 html {
 	--hsl-h: 206;
@@ -283,14 +238,14 @@ section {
 	float: right;
 }
 h2 {
-	margin-top: 2rem !important;
-	margin-bottom: 2rem !important;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 	font-weight: bolder;
 }
 .round-box {
 	position: absolute;
-	height: 2rem !important;
-	width: 2rem !important;
+	height: 2rem;
+	width: 2rem;
 	background: rgb(135, 183, 245);
 	top: 0px;
 	left: 90%;
@@ -306,8 +261,8 @@ h2 {
 }
 .die-content {
 	background-color: #3c3948;
-	width: 100% !important;
-	height: 100% !important;
+	width: 100%;
+	height: 100%;
 	color: white;
 	padding: 1rem;
 	padding-top: 2rem;
@@ -326,10 +281,10 @@ h2 {
 }
 @media only screen and (max-width: 1026px) {
 	.left-section {
-		display: none !important;
+		display: none;
 	}
 	.natch-layer {
-		display: none !important;
+		display: none;
 	}
 }
 .auto-grid-element > div {
@@ -338,17 +293,17 @@ h2 {
 
 .question-circle {
 	position: absolute;
-	height: 2.2rem !important;
-	width: 2.2rem !important;
+	height: 2.2rem;
+	width: 2.2rem;
 	background-color: silver;
 	color: var(--color-text);
-	top: 0px !important;
-	left: 50% !important;
-	border-radius: 100% !important;
-	margin-top: -25px !important;
-	padding: 7px !important;
-	padding-top: 2px !important;
-	padding-left: 9px !important;
+	top: 0px;
+	left: 50%;
+	border-radius: 100%;
+	margin-top: -25px;
+	padding: 7px;
+	padding-top: 2px;
+	padding-left: 9px;
 	font-weight: bold;
 	font-size: 30px;
 }
@@ -393,8 +348,8 @@ h2 {
 }
 
 .natch-layer > div > h2 {
-	margin: 0 !important;
-	padding: 0rem !important;
+	margin: 0;
+	padding: 0rem;
 }
 
 .natch-layer > div > p {
@@ -408,7 +363,7 @@ h2 {
 	padding: 0.3rem;
 }
 .transparent-background {
-	background: transparent !important;
+	background: transparent;
 }
 
 .passt {
@@ -435,7 +390,7 @@ h2 {
 
 .passt > div:nth-child(6) {
 	float: right;
-	font-size: 1rem !important;
+	font-size: 1rem;
 	padding-right: 1rem;
 }
 

@@ -28,13 +28,7 @@
 
 					<a style="padding-top: 0.5rem;color: white;">
 						<i class="fa fa-user"></i> FACHHÄNDLER REGISTRIERUNG
-						<select id='preferred_theme'>
-							<option value="normal-mode-theme">normal theme</option>
-							<option value="light-mode-theme">light theme</option>
-							<option value="dark-mode-theme">dark theme</option>
-						</select>
 					</a>
-
 
 					<div class="left-section">
 						<div class='passt'>
@@ -184,14 +178,14 @@
 					<h2 class="dark-text align-text-center">Die häugsten Frgen</h2>
 				</div>
 
-				
+
 				<div class="u1-auto-grid auto-grid-element align-text-center natch-layer" style="--u1-Items-width: 20rem">
 					<div>
 						<h2><span  class="transparent-background">NACHT</span></h2>
 						<p>Linse beim Zubettgehen<br/>einsetzen</p>
 					</div>
 					<div>
-						<div class="cd-dark"></div>	
+						<div class="cd-dark"></div>
 					</div>
 					<div>
 						<h2 class="lighter"><span class="transparent-background">TAG</span> </h2>
@@ -215,18 +209,18 @@
 				<li class="u1-card1" style="flex: 1 0 14rem; text-align: center; padding: 2rem">
 					<div style="font-size: 2rem"><i>i</i>-<strong>Night Downloads</strong></div>
 					<div style="margin: 2rem; font-size: 1rem;">
-						Mehr Informationen über die i-NIGHT<br/> 
+						Mehr Informationen über die i-NIGHT<br/>
 						in unserem Endverbraucher-Flyer:
 					</div>
 					<div>
-						<button>DOWNLOAD PDF <i class="fa fa-arrow-down"></i></button>
+						<button>Download PDF <i class="fa fa-arrow-down"></i></button>
 					</div>
 				</li>
 			</ul>
 
 			<ul class="u1-flex-gap ">
 				<li class="u1-card1" style="flex: 1 0 14rem;padding: 2rem;">
-					<div >	
+					<div >
 						<div class="dark-text-lighter relative-position" >
 							<div class="lighter"
 								style="
@@ -337,7 +331,7 @@
 				</form>
 
 				<div style="text-align: center; margin-top: 2rem">
-					<button>SENDEN <i class="fa fa-arrow-right"></i></button>
+					<button>Senden <i class="fa fa-arrow-right"></i></button>
 				</div>
 			</div>
 		</section>
@@ -362,7 +356,7 @@
 				<img src="https://picsum.photos/500/200?random=5" width="500" height="200" alt="picsum">
 			</u1-carousel>
 			<div style="text-align: center; margin-top: 2rem">
-				<button style="background: transparent;border:1px solid black;color: black;">ZUM PRODUKT</button>
+				<button style="background: transparent;border:1px solid black;color: black;">Zum Produkt</button>
 			</div>
 		</section>
 
@@ -371,7 +365,7 @@
 			<div class="u1-width" style="position: relative;">
 				<div style="font-size: 1.2rem; color: white;left:70%;top:0px;background: red;">
 					<div class="float-left">
-						<i class="fa fa-times" id='close-register'></i> <span>SCHLIESSEN</span>
+						<i class="fa fa-times" id='close-register'></i> <span>Schliessen</span>
 					</div>
 
 					<div class="float-right relative-position" style="padding: 1px;">
@@ -385,8 +379,8 @@
 						</div>
 					</div>
 
-					
-				
+
+
 				</div>
 				<div style='clear:both'></div>
 				<h2>Registrierung als authorisierter Fachhändler für die i-NIGHT Ortho-K-Linse:</h2>
@@ -440,7 +434,7 @@
 					<p>Linse beim Zubettgehen<br/>einsetzen</p>
 				</div>
 				<div>
-					<div class="cd-dark"></div>	
+					<div class="cd-dark"></div>
 				</div>
 				<div>
 					<h2 class="lighter"><span>TAG</span> </h2>
@@ -542,40 +536,17 @@
 
 				<div class="wide-slide-box wide-slide-box3">
 					<p>Effekte</p>
-					<button >SENDEN <i class="fa fa-arrow-right"></i></button>
-					<button >SENDEN <i class="fa fa-arrow-right"></i></button>
+					<button>Senden <i class="fa fa-arrow-right"></i></button>
+					<button>Senden <i class="fa fa-arrow-right"></i></button>
 				</div>
 			</div>
 		</div>
 
 		<script>
-			var updateTheme = (theme_name)=>{
-				var mainBody = document.getElementById('main-body')
-				mainBody.className = theme_name
-				localStorage.setItem('preferred_theme',theme_name)
-			};
-
 			(function(){
 				const closeButton = document.getElementById('close-register')
 				closeButton.addEventListener('click',()=>{
 					document.getElementById('register-form').style.display = 'none';
 				})
 			})();
-
-
-			(function(setTheme){
-				themeBtn = document.getElementById('preferred_theme')
-				themeBtn.addEventListener('change',()=>{
-					setTheme(themeBtn.value)
-				})
-				document.addEventListener('DOMContentLoaded', function() {
-   						const theme = localStorage.getItem('preferred_theme')
-						if(theme === null || theme === undefined){
-							const default_theme = 'normal-mode-theme'
-							setTheme(default_theme)
-						}else{
-							setTheme(theme)	
-						}
-				}, false);
-			})(updateTheme);
 		</script>
