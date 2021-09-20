@@ -24,6 +24,7 @@ button {
 	position: relative;
 }
 button:hover:not([disabled]) {
+	background-color: #4736f2;
 	background-position-x: 10em;
 }
 button::after {
