@@ -18,13 +18,12 @@ textarea {
 button {
 	text-transform: uppercase;
 	border-radius: 3em;
-	background-color: var(--button-color);
+	background-color: #4736f2;
 	background-image: linear-gradient(to left, #783de5, #4736f2);
 	transition: background-position 0.5s;
 	position: relative;
 }
 button:hover:not([disabled]) {
-	background-color: #4736f2;
 	background-position-x: 10em;
 }
 button::after {
