@@ -87,34 +87,8 @@ section {
 	margin-right: 0;
 }
 
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: space-around;
-	height: 50vh;
-	align-items: center;
-}
 
-.box {
-	height: 10rem;
-	width: 10rem;
-}
 
-.align-text-center {
-	text-align: center;
-}
-
-.white-text {
-	color: white;
-}
-.dark-text {
-	color: #132842;
-}
-
-.dark-text-lighter {
-	color: rgb(119, 143, 247);
-}
 
 .night-pack-background {
 	background: url("./img/pexels-photo-2846764.jpeg");
@@ -126,14 +100,6 @@ section {
 }
 
 /* end header  */
-
-.slide-container {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-}
 
 .slide-box {
 	margin-bottom: 15rem;
@@ -325,10 +291,6 @@ h2 {
 	margin-top: -10px;
 }
 
-.lighter {
-	opacity: 0.6;
-}
-
 .natch-layer {
 	padding-left: 4rem;
 	padding-right: 4rem;
@@ -396,8 +358,4 @@ h2 {
 
 .relative-position {
 	position: relative;
-}
-
-.content-section {
-	color: var(--primary-color);
 }
