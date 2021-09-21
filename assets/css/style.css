@@ -9,6 +9,17 @@
 		font-style: normal;
 }
 
+@font-face {
+	font-family: 'Raleway';
+	src: url('fonts/xxx.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: fallback;
+}
+
+
+
+
 /* global */
 html {
 	--hsl-h: 206;
