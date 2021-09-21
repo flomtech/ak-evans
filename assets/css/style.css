@@ -71,6 +71,10 @@ button {
 	background-image: linear-gradient(to left, #783de5, #4736f2);
 	transition: background-position 0.5s;
 	position: relative;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
 }
 button:hover:not([disabled]) {
 	background-color: #4736f2;
