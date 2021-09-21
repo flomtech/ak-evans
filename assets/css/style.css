@@ -1,13 +1,4 @@
 @font-face {
-	font-family: "EntezareZohoor2";
-	src: url("../fonts/1632216484-brownstd-bold.otf"), url("../fonts/1632216484-BrownStd-Light.otf"),
-		url("../fonts/1632216484-MyriadPro-Regular.otf"), url("../fonts/1632216484-Raleway-Bold.ttf"),
-		url("../fonts/1632216484-Raleway-Medium.ttf");
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
 	font-family: "CustomFont";
 	src: url("../fonts/1632216484-brownstd-bold.otf") format("opentype"),
 		url("../fonts/1632216484-BrownStd-Light.otf") format("opentype"),
