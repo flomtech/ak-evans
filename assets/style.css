@@ -6,6 +6,7 @@ html {
 	--color-text: #002642;
 	--color-bg: #fff;
 	--width: 50em;
+	--grey: #eeeeee;
 }
 
 input,
@@ -35,13 +36,14 @@ button::after {
 	right: 1rem;
 	bottom: 0;
 	border-radius: 100%;
-	box-shadow: 0 0 1rem #000f;
-	height: 29px;
+	height: 1rem;
 	transition: 0.2s;
-	will-change: box-shadow;
+	will-change: filter;
+	background-color: inherit;
+	filter: drop-shadow(0 0 0.7rem #000f);
 }
 button:hover:not([disabled])::after {
-	box-shadow: 0 0 1.2rem #000f;
+	filter: drop-shadow(0 0 0.8rem #000f);
 }
 
 section {
@@ -49,7 +51,15 @@ section {
 	padding-bottom: 2rem;
 }
 
+.u1-auto-grid > * {
+	position: relative;
+}
+.u1-flex-gap > * {
+	position: relative;
+}
+
 /* classes */
+
 .cd-dark {
 	background-color: var(--color-text);
 	color: #fff;
@@ -62,6 +72,28 @@ section {
 .cd-dark textarea {
 	background-color: #17405e;
 	color: #fff;
+}
+
+.u1-card1 .-circle {
+	position: absolute;
+	height: 2.6rem;
+	width: 2.6rem;
+	top: -1.3rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-text);
+	color: var(--color-bg);
+	border-radius: 100%;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.u1-card1 {
+	padding-top: 1rem;
 }
 
 /* header  */
@@ -87,19 +119,18 @@ section {
 	margin-right: 0;
 }
 
+/*  components  */
 
-
-
-.night-pack-background {
-	background: url("./img/pexels-photo-2846764.jpeg");
-	background-size: cover;
+.cd-vorteile > div {
+	padding: var(--gap);
+	background-color: #17405e;
 }
-.face-background {
-	background: url("./face.jpg");
-	background-size: cover;
+.cd-faq {
+	background-color: var(--grey);
 }
-
-/* end header  */
+.cd-faq .u1-flex-gap > * {
+	background: var(--color-bg);
+}
 
 .slide-box {
 	margin-bottom: 15rem;
@@ -111,102 +142,19 @@ section {
 	width: 75vh;
 	height: 75vh;
 	margin-bottom: 3rem;
-}
-
-.slide-box1 {
 	background-size: 100%;
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(./sleep.png);
 }
-.slide-box2 {
-	background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-		url(./img/pexels-photo-2348017.jpeg);
-	background-size: cover;
-}
-.slide-box3 {
-	background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-		url(./img/pexels-photo-2846764.jpeg);
-	background-size: cover;
-}
-.slide-box4 {
-	background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-		url(./img/pexels-photo-3867513.jpeg);
-	background-size: cover;
-}
 
-.wide-slide-container {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.wide-slide-box {
-	height: 30rem;
-	width: 100rem;
-	margin-bottom: 10rem;
-	margin-top: 10px;
-	margin: auto;
-	padding-left: 3rem;
-	text-align: left;
-}
-
-.wide-slide-box3 > p {
-	text-align: left;
-	padding-bottom: 5rem;
-	padding-top: 2rem;
-	font-size: 3rem;
-	letter-spacing: 0.007rem;
-	color: brown;
-}
-
-.wide-slide-box3 > button {
-	padding-left: 2rem;
-	padding-right: 2rem;
-}
-
-.wide-slide-box3 i {
-	padding-left: 2rem;
-}
-
-.wide-slide-box1 {
-	background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(./hand.png);
-	background-size: cover;
-}
-
-.wide-slide-box2 {
-	background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-		url(./img/contact-mountain.png);
-	background-size: cover;
-}
-.wide-slide-box3 {
-	background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-		url(./img/contact-mountain.png);
-	background-size: cover;
-}
 .slide-box h2 {
 	margin-top: 80px;
 	color: white;
 }
 .wide-slide-content {
 	width: 50%;
-	color: white;
-	font-size: 20px;
-	font-weight: bold;
-	margin-top: 100px;
-}
-.float-left {
-	float: left;
-}
-.float-right {
-	float: right;
-}
-h2 {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	font-weight: bolder;
+	margin-top: 5rem;
 }
 .round-box {
 	position: absolute;
@@ -219,124 +167,23 @@ h2 {
 	margin-top: -15px;
 	padding: 8px;
 	padding-top: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .round-box > i {
 	color: white;
 	transform: rotate(90deg);
 }
-.die-content {
-	background-color: #3c3948;
-	width: 100%;
-	height: 100%;
-	color: white;
-	padding: 1rem;
-	padding-top: 2rem;
-}
-.box-content {
-	position: relative;
-}
-
-.left-section {
-	text-align: left;
-	width: 15rem;
-	margin: 5rem;
-	position: absolute;
-	top: 10%;
-	left: 60%;
-}
-@media only screen and (max-width: 1026px) {
-	.left-section {
-		display: none;
-	}
-	.natch-layer {
-		display: none;
-	}
-}
-.auto-grid-element > div {
-	position: relative;
-}
-
-.question-circle {
-	position: absolute;
-	height: 2.2rem;
-	width: 2.2rem;
-	background-color: silver;
-	color: var(--color-text);
-	top: 0px;
-	left: 50%;
-	border-radius: 100%;
-	margin-top: -25px;
-	padding: 7px;
-	padding-top: 2px;
-	padding-left: 9px;
-	font-weight: bold;
-	font-size: 30px;
-}
-
-.intro-text {
-	font-weight: normal;
-	font-size: 2.2rem;
-	word-spacing: 0.2rem;
-}
-
-.round-circle-box {
-	width: 50px;
-	height: 50px;
-	border: 1px solid white;
-	position: absolute;
-	border-radius: 100%;
-	left: 80%;
-	top: 0px;
-	margin-top: -10px;
-}
-
-.natch-layer {
-	padding-left: 4rem;
-	padding-right: 4rem;
-}
-.natch-layer > div:first-child {
-	text-align: left;
-}
-
-.natch-layer > div:nth-child(2) > div {
-	height: 3px;
-	width: 100%;
-	margin: 1rem;
-}
-
-.natch-layer > div:last-child {
-	text-align: right;
-}
-
-.natch-layer > div > h2 {
-	margin: 0;
-	padding: 0rem;
-}
-
-.natch-layer > div > p {
-	padding: 1rem;
-	font-size: 0.8rem;
-}
-
-.natch-layer > div > h2 > span {
-	background: rgb(226, 199, 43);
-	border-radius: 5px;
-	padding: 0.3rem;
-}
-.transparent-background {
-	background: transparent;
-}
 
 .passt {
 	font-size: 1.9rem;
 	color: white;
 }
-
 .passt > div:nth-child(1) {
 	float: left;
 }
-
 .passt > div:nth-child(2) {
 	width: 50px;
 	height: 50px;
@@ -345,17 +192,11 @@ h2 {
 	border-radius: 100%;
 	margin-left: 1rem;
 }
-
 .passt > div:nth-child(4) {
 	float: left;
 }
-
 .passt > div:nth-child(6) {
 	float: right;
 	font-size: 1rem;
 	padding-right: 1rem;
-}
-
-.relative-position {
-	position: relative;
 }
