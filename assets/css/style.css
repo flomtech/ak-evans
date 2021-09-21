@@ -205,6 +205,10 @@ section {
 	color: white;
 }
 
+h2{
+	font-size: 2rem;
+}
+
 .round-box {
 	position: absolute;
 	height: 2rem;
