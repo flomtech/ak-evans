@@ -1,33 +1,47 @@
-@font-face {
-	font-family: "CustomFont";
-	src: url("../fonts/1632216484-brownstd-bold.otf"),
-		url("../fonts/1632216484-BrownStd-Light.otf"),
-		url("../fonts/1632216484-MyriadPro-Regular.otf"),
-		url("../fonts/1632216484-Raleway-Bold.ttf"),
-		url("../fonts/1632216484-Raleway-Medium.ttf");
-		font-weight: normal;
-		font-style: normal;
-}
+/* global */
 
+/* Raleway */
 @font-face {
 	font-family: 'Raleway';
-	src: url('fonts/Raleway-Medium.woff2') format('woff2');
+	src: url('../fonts/Raleway-Medium.woff2') format('woff2');
+	font-weight: 400; /* normal */
+	font-style: normal;
+	font-display: fallback;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Bold.woff2') format('woff2');
+	font-weight: 900; /* bold */
+	font-style: normal;
+	font-display: fallback;
+}
+
+/* BrownStr */
+@font-face {
+	font-family: 'BrownStd';
+	src: url('../fonts/BrownStd-Light.woff2') format('woff2');
+	font-weight: 400; /* normal */
+	font-style: normal;
+	font-display: fallback;
+}
+@font-face {
+	font-family: 'BrownStd';
+	src: url('../fonts/BrownStd-Bold.woff2') format('woff2');
+	font-weight: 900; /* bold */
+	font-style: normal;
+	font-display: fallback;
+}
+
+/* MyriadPro */
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('../fonts/MyriadPro-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
 	font-display: fallback;
 }
-@font-face {
-	font-family: 'Raleway';
-	src: url('fonts/Raleway-Bold.woff2') format('woff2');
-	font-weight: 900;
-	font-style: normal;
-	font-display: fallback;
-}
 
 
-
-
-/* global */
 html {
 	--hsl-h: 206;
 	--hsl-s: 47.9%;
@@ -36,7 +50,7 @@ html {
 	--color-bg: #fff;
 	--width: 50em;
 	--grey: #eeeeee;
-	font-family: 'CustomFont';
+	font-family: 'Raleway';
 }
 
 input,
