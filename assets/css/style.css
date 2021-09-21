@@ -7,6 +7,15 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "CustomFont";
+	src: url("../fonts/1632216484-brownstd-bold.otf") format("opentype"),
+		url("../fonts/1632216484-BrownStd-Light.otf") format("opentype"),
+		url("../fonts/1632216484-MyriadPro-Regular.otf") format("opentype"),
+		url("../fonts/1632216484-Raleway-Bold.ttf") format("opentype"),
+		url("../fonts/1632216484-Raleway-Medium.ttf") format("opentype");
+}
+
 /* global */
 html {
 	--hsl-h: 206;
