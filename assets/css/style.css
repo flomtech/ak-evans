@@ -17,6 +17,7 @@ html {
 	--width: 50em;
 	--grey: #eeeeee;
 	--color: #61bcfd;
+	font-family: 'CustomFont';
 }
 
 input,
@@ -190,7 +191,7 @@ section {
 .passt {
 	font-size: 1.5rem;
 	color: white;
-	width: 10.3rem;
+	width: 11.8rem;
 }
 
 .passt > div:nth-child(1) {
