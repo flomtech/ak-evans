@@ -1,3 +1,12 @@
+@font-face {
+	font-family: "EntezareZohoor2";
+	src: url("../fonts/1632216484-brownstd-bold.otf"), url("../fonts/1632216484-BrownStd-Light.otf"),
+		url("../fonts/1632216484-MyriadPro-Regular.otf"), url("../fonts/1632216484-Raleway-Bold.ttf"),
+		url("../fonts/1632216484-Raleway-Medium.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* global */
 html {
 	--hsl-h: 206;
@@ -7,6 +16,7 @@ html {
 	--color-bg: #fff;
 	--width: 50em;
 	--grey: #eeeeee;
+	--color: #61bcfd;
 }
 
 input,
@@ -144,7 +154,7 @@ section {
 	background-size: 100%;
 	background-position: center bottom;
 	background-repeat: no-repeat;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(./sleep.png);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../img/sleep.png);
 }
 
 .slide-box h2 {
