@@ -73,8 +73,8 @@ button {
 	position: relative;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	padding-top: 0.4rem;
-	padding-bottom: 0.4rem;
+	padding-top: 0.6rem;
+	padding-bottom: 0.6rem;
 }
 button:hover:not([disabled]) {
 	background-color: #4736f2;
