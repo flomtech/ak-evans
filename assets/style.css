@@ -6,11 +6,7 @@ html {
 	--color-text: #002642;
 	--color-bg: #fff;
 	--width: 50em;
-<<<<<<< HEAD
 	--grey: #eeeeee;
-=======
-	--grey:#EEEEEE;
->>>>>>> c6ec9f273f65ae267dd68a4bf928d03727c740eb
 }
 
 input,
@@ -44,17 +40,10 @@ button::after {
 	transition: 0.2s;
 	will-change: filter;
 	background-color: inherit;
-<<<<<<< HEAD
 	filter: drop-shadow(0 0 0.7rem #000f);
 }
 button:hover:not([disabled])::after {
 	filter: drop-shadow(0 0 0.8rem #000f);
-=======
-	filter: drop-shadow(0 0 .7rem #000f);
-}
-button:hover:not([disabled])::after {
-	filter: drop-shadow(0 0 .8rem #000f);
->>>>>>> c6ec9f273f65ae267dd68a4bf928d03727c740eb
 }
 
 section {
@@ -62,18 +51,12 @@ section {
 	padding-bottom: 2rem;
 }
 
-<<<<<<< HEAD
 .u1-auto-grid > * {
 	position: relative;
 }
 .u1-flex-gap > * {
 	position: relative;
 }
-=======
-
-.u1-auto-grid > * { position: relative; }
-.u1-flex-gap > * { position: relative; }
->>>>>>> c6ec9f273f65ae267dd68a4bf928d03727c740eb
 
 /* classes */
 
@@ -91,10 +74,6 @@ section {
 	color: #fff;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> c6ec9f273f65ae267dd68a4bf928d03727c740eb
 .u1-card1 .-circle {
 	position: absolute;
 	height: 2.6rem;
@@ -106,10 +85,6 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-<<<<<<< HEAD
-=======
-
->>>>>>> c6ec9f273f65ae267dd68a4bf928d03727c740eb
 	background-color: var(--color-text);
 	color: var(--color-bg);
 	border-radius: 100%;
@@ -117,13 +92,10 @@ section {
 	font-size: 30px;
 }
 
-<<<<<<< HEAD
 .u1-card1 {
 	padding-top: 1rem;
 }
 
-=======
->>>>>>> c6ec9f273f65ae267dd68a4bf928d03727c740eb
 /* header  */
 #head {
 	position: relative;
@@ -150,7 +122,6 @@ section {
 /*  components  */
 
 .cd-vorteile > div {
-<<<<<<< HEAD
 	padding: var(--gap);
 	background-color: #17405e;
 }
@@ -160,20 +131,6 @@ section {
 .cd-faq .u1-flex-gap > * {
 	background: var(--color-bg);
 }
-=======
-	padding:var(--gap);
-	background-color:#17405E;
-}
-.cd-faq {
-	background-color: var(--grey)
-}
-.cd-faq .u1-flex-gap > * {
-	background:var(--color-bg);
-}
-
-
-
->>>>>>> c6ec9f273f65ae267dd68a4bf928d03727c740eb
 
 .slide-box {
 	margin-bottom: 15rem;
@@ -190,24 +147,13 @@ section {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(./sleep.png);
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> c6ec9f273f65ae267dd68a4bf928d03727c740eb
 .slide-box h2 {
 	margin-top: 80px;
 	color: white;
 }
 .wide-slide-content {
 	width: 50%;
-<<<<<<< HEAD
 	margin-top: 5rem;
-=======
-	color: white;
-	font-size: 20px;
-	font-weight: bold;
-	margin-top: 100px;
->>>>>>> c6ec9f273f65ae267dd68a4bf928d03727c740eb
 }
 .round-box {
 	position: absolute;
@@ -220,11 +166,7 @@ section {
 	margin-top: -15px;
 	padding: 8px;
 	padding-top: 5px;
-<<<<<<< HEAD
 	display: flex;
-=======
-	display:flex;
->>>>>>> c6ec9f273f65ae267dd68a4bf928d03727c740eb
 	align-items: center;
 	justify-content: center;
 }
@@ -233,11 +175,6 @@ section {
 	color: white;
 	transform: rotate(90deg);
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> c6ec9f273f65ae267dd68a4bf928d03727c740eb
 
 .passt {
 	font-size: 1.9rem;
