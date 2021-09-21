@@ -217,7 +217,7 @@ h2{
 	position: absolute;
 	height: 2rem;
 	width: 2rem;
-	background: rgb(135, 183, 245);
+	background: var(--color);
 	top: 0px;
 	left: 90%;
 	border-radius: 100%;
