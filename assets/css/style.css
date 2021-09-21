@@ -60,8 +60,8 @@ button:hover:not([disabled])::after {
 }
 
 section {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
 }
 
 .u1-auto-grid > * {
@@ -165,10 +165,7 @@ section {
 	margin-top: 80px;
 	color: white;
 }
-.wide-slide-content {
-	width: 50%;
-	margin-top: 5rem;
-}
+
 .round-box {
 	position: absolute;
 	height: 2rem;
@@ -213,9 +210,4 @@ section {
 .passt > div:last-child {
 	text-align: right;
 	padding-right: 2px;
-}
-
-section {
-	padding-top: 2.5rem;
-	padding-bottom: 2.5rem;
 }
