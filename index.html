@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>i-Night | Home</title>
 		<link href="./assets/css/style.css" rel="stylesheet">
-		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-			rel="stylesheet"
-		/>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 		<script type="module" src="https://cdn.jsdelivr.net/gh/u1ui/u1@1.8.8/auto.min.js"></script>
+
+		<script type="module" src="./develop/screen.js"></script>
+
+
 	</head>
 	<body>
-		<header class="cd-dark" id="head" style="opacity: 0.8">
+
+		<header class="cd-dark" id="head">
 			<div class="u1-width">
 				<div class="u1-flex-gap">
 					<div>
@@ -26,24 +27,16 @@
 								<li><a href="">Pflege</a></li>
 							</ul>
 						</nav>
+						<p style="padding-bottom: 1rem">Orthokeratologie auf höchstem Niveau</p>
 					</div>
 
-					<a class="u1-flex-gap" style="padding-top: 0.5rem; color: white">
+					<a class="u1-flex-gap" style="padding-top: 0.5rem; color:inherit; font-size:.6em; margin-right:auto">
 						<i class="fa fa-user"></i>
 						<spans>FACHHÄNDLER<br>REGISTRIERUNG</spans>
 					</a>
+					<svg style="width:16rem; fill:currentColor"><use href="./assets/img/logo.svg#main"></use></svg>
 				</div>
-				<p style="padding-bottom: 1rem">Orthokeratologie auf höchstem Niveau</p>
-				<div style="float: right">
-					<div class="passt">
-						<div>
-							<span>appenzeller</span>
-							<span></span>
-						</div>
-						<div>kontaktlinsen®</div>
-						<div>passt</div>
-					</div>
-				</div>
+
 				<h1 style="color: var(--color)"><i>i</i>-Night</h1>
 
 				<h2 style="padding-bottom: 2rem">
@@ -125,9 +118,9 @@
 
 		<section class="cd-faq">
 			<div class="u1-width">
-				<h2 style="text-align: center; margin-bottom: 4rem">Die häufgsten Fragen</h2>
+				<h2 style="text-align: center; margin-bottom: 4rem">Die häufigsten Fragen</h2>
 
-				<ul class="u1-flex-gap" style="padding: 0">
+				<ul class="u1-flex-gap">
 					<li class="u1-card1" style="flex: 1 0 14rem">
 						<div class="-circle"><i class="fa fa-question"></i></div>
 						<h3>Warum Kontaktlinsen?</h3>
@@ -211,14 +204,8 @@
 			<div class="u1-width">
 				<div class="u1-flex-gap">
 					<div style="flex: 1 1 14rem">
-						<div class="passt">
-							<div>
-								<span style="color: black">appenzeller</span>
-								<span style="border: 1px solid black"></span>
-							</div>
-							<div style="color: black">kontaktlinsen®</div>
-							<div style="color: black">passt</div>
-						</div>
+
+						<svg style="width:16rem; fill:currentColor"><use href="./assets/img/logo.svg#main"></use></svg>
 
 						<h5>
 							Appenzeller Kontaktlinsen bekommen Sie einzig und allein bei Ihrem Augenoptiker oder
@@ -349,18 +336,7 @@
 			<div class="u1-width">
 				<div class="u1-flex-gap" style="justify-content: space-between">
 					<div><i class="fa fa-times" id="close-register"></i> <span>Schliessen</span></div>
-					<div>
-						<div class="relative-position" style="padding: 1px">
-							<div class="passt">
-								<div>
-									<span>appenzeller</span>
-									<span></span>
-								</div>
-								<div>kontaktlinsen®</div>
-								<div>passt</div>
-							</div>
-						</div>
-					</div>
+					<svg style="width:16rem; fill:currentColor"><use href="./assets/img/logo.svg#main"></use></svg>
 				</div>
 
 				<h2>Registrierung als authorisierter Fachhändler für die i-NIGHT Ortho-K-Linse:</h2>
@@ -422,20 +398,13 @@
 						verschreibt, braucht Passion, Geschick, Geduld – und viel Hingebung zum Detail
 					</p>
 					<div style="text-align: left; width: 15rem">
-						<div class="passt">
-							<div>
-								<span>appenzeller</span>
-								<span></span>
-							</div>
-							<div>kontaktlinsen®</div>
-							<div>passt</div>
-						</div>
+						<svg style="width:16rem; fill:currentColor"><use href="./assets/img/logo.svg#main"></use></svg>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section style="background-color: var(--color)">
+		<section style="background-color: var(--color); color:var(--color-bg)">
 			<div class="u1-width">
 				<div class="u1-flex-gap">
 					<div style="flex: 1 0 14rem">
@@ -474,5 +443,3 @@
 				});
 			})();
 		</script>
-	</body>
-</html>
