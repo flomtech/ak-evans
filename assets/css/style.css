@@ -144,6 +144,11 @@ section {
 	font-size: 30px;
 }
 
+.-circle > i {
+	font-size: 1.5rem;
+	transform: scale(.7, 1)
+}
+
 .u1-card1 {
 	padding-top: 1rem;
 }
@@ -177,6 +182,7 @@ section {
 	padding: var(--gap);
 	background-color: #17405e;
 	margin-left: 2rem;
+	padding: 1.6rem;
 }
 .cd-faq {
 	background-color: var(--grey);
