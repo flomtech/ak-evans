@@ -242,3 +242,8 @@ h2{
 	font-weight: normal;
 }
 
+.cd-faq .u1-flex-gap h3{
+	font-size: 1.1rem;
+	padding-top: 1.2rem;
+	padding-bottom: 0rem;
+}
