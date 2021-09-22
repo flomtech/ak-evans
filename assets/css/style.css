@@ -123,8 +123,8 @@ section {
 
 .u1-card1 .-circle {
 	position: absolute;
-	height: 2.8rem;
-	width: 2.8rem;
+	height: 3.2rem;
+	width: 3.2rem;
 	top: -1.3rem;
 	left: 0;
 	right: 0;
@@ -136,7 +136,7 @@ section {
 	color: var(--color-bg);
 	border-radius: 100%;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 1.3rem;
 }
 
 .u1-card1 {
