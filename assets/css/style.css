@@ -176,6 +176,7 @@ section {
 .cd-vorteile > div {
 	padding: var(--gap);
 	background-color: #17405e;
+	margin-left: 2rem;
 }
 .cd-faq {
 	background-color: var(--grey);
