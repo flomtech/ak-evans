@@ -168,10 +168,12 @@ section {
 
 /*  components  */
 
+.cd-vorteile {
+	--u1-Col-gap:3rem;
+}
 .cd-vorteile > div {
 	padding: var(--gap);
 	background-color: #17405e;
-	margin-left: 2rem;
 	padding: 1.6rem;
 }
 .cd-faq {
