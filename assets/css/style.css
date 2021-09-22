@@ -71,6 +71,10 @@ button {
 	background-image: linear-gradient(to left, #783de5, #4736f2);
 	transition: background-position 0.5s;
 	position: relative;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 0.6rem;
+	padding-bottom: 0.6rem;
 }
 button:hover:not([disabled]) {
 	background-color: #4736f2;
@@ -124,8 +128,8 @@ section {
 
 .u1-card1 .-circle {
 	position: absolute;
-	height: 2.6rem;
-	width: 2.6rem;
+	height: 2.8rem;
+	width: 2.8rem;
 	top: -1.3rem;
 	left: 0;
 	right: 0;
@@ -138,6 +142,11 @@ section {
 	border-radius: 100%;
 	font-weight: bold;
 	font-size: 30px;
+}
+
+.-circle > i {
+	font-size: 1.5rem;
+	transform: scale(.7, 1)
 }
 
 .u1-card1 {
@@ -158,7 +167,7 @@ section {
 	display: flex;
 }
 #head nav a {
-	margin-right: 1rem;
+	margin-right: 2rem;
 	display: block;
 	color: inherit;
 	padding: 0.5rem 0;
@@ -172,6 +181,8 @@ section {
 .cd-vorteile > div {
 	padding: var(--gap);
 	background-color: #17405e;
+	margin-left: 2rem;
+	padding: 1.6rem;
 }
 .cd-faq {
 	background-color: var(--grey);
@@ -205,11 +216,15 @@ section {
 	color: white;
 }
 
+h2{
+	font-size: 2.3rem;
+}
+
 .round-box {
 	position: absolute;
 	height: 2rem;
 	width: 2rem;
-	background: rgb(135, 183, 245);
+	background: var(--color);
 	top: 0px;
 	left: 90%;
 	border-radius: 100%;
@@ -224,4 +239,11 @@ section {
 .round-box > i {
 	color: white;
 	transform: rotate(90deg);
+	font-weight: normal;
+}
+
+.cd-faq .u1-flex-gap h3{
+	font-size: 1.1rem;
+	padding-top: 1.2rem;
+	padding-bottom: 0rem;
 }

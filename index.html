@@ -9,13 +9,10 @@
 		<script type="module" src="https://cdn.jsdelivr.net/gh/u1ui/u1@1.8.8/auto.min.js"></script>
 
 		<script type="module" src="./develop/screen.js"></script>
-
-
 	</head>
 	<body>
-
 		<header class="cd-dark" id="head">
-			<div class="u1-width">
+			<div class="u1-width" style='max-width: 60rem;padding: 2rem;padding-top: 1rem;'>
 				<div class="u1-flex-gap">
 					<div>
 						<nav>
@@ -27,25 +24,28 @@
 								<li><a href="">Pflege</a></li>
 							</ul>
 						</nav>
-						<p style="padding-bottom: 1rem">Orthokeratologie auf höchstem Niveau</p>
+						<p style="padding-bottom: 1rem;font-weight: normal;font-size: 1.1rem;">Orthokeratologie auf höchstem Niveau</p>
 					</div>
 
-					<a class="u1-flex-gap" style="padding-top: 0.5rem; color:inherit; font-size:.6em; margin-right:auto">
-						<i class="fa fa-user"></i>
+					
+					<a class="u1-flex-gap" style="padding-top: 0rem; color:inherit; font-size:0.9em; margin-right:auto;letter-spacing: 0.0925em;top:-0.1rem;">
+						<i class="fa fa-user" style='font-size:2.1rem;'></i>
 						<spans>FACHHÄNDLER<br>REGISTRIERUNG</spans>
 					</a>
-					<svg style="width:16rem; fill:currentColor"><use href="./assets/img/logo.svg#main"></use></svg>
+
+					
+					<svg style="width:15rem; fill:currentColor;margin-right: 2rem;"><use href="./assets/img/logo.svg#main"></use></svg>
 				</div>
 
-				<h1 style="color: var(--color)"><i>i</i>-Night</h1>
+				<h1 style="color: var(--color);font-size: 4rem;font-weight: normal;"><i>i</i>-NIGHT</h1>
 
-				<h2 style="padding-bottom: 2rem">
+				<h2 style="padding-bottom: 2rem;font-weight: normal;color: white;font-size: 2.5rem;">
 					Nachts tragen – tagsüber sehen:<br>
-					Ohne Brille, ohne Linsen
+					Ohne Brille, ohne Linsen.
 				</h2>
 
 				<a style="padding-bottom: 2rem" href="#first-section">
-					<button>Scroll <i class="fa fa-arrow-down"></i></button>
+					<button> <span>Scroll</span> <span style='padding-left: 1rem;'><i class="fa fa-arrow-down"></i></span>  </button>
 				</a>
 			</div>
 
@@ -54,24 +54,33 @@
 			</u1-parallax-bg>
 		</header>
 
-		<section id="first-section">
-			<div class="u1-width">
+		<section id="first-section" >
+			<div class="u1-width" style='max-width: 80rem;'>
 				<div class="u1-flex-gap">
-					<div style="flex: 1 0 14rem">
+					<div style="flex: 1 0 14rem;">
 						<img src="./assets/img/box.png">
 					</div>
-					<div style="flex: 1 0 14rem">
-						<h2>Appenzeller Kontaktlinsen® Saline</h2>
+					<div style="flex: 1 0 14rem;padding: 4rem;">
+						<h2 >Warum Kontaktlinsen in der Natch tragen?</h2>
 						<u1-carousel mode="scroll">
 							<div>
-								<strong>…um am Tag besser zu sehen.</strong> <br>
+								<div class="u1-card1" style='padding: 1rem;text-align: left;'>
+									<strong>…um am Tag besser zu sehen.</strong> <br>
 								Die Nachtlinsen sorgen dafür, dass die Radien der Hornhaut während des Schlafs acher
 								werden und sich auf die Hornhaut übertragen.
+								</div>
+								
 							</div>
 							<div>
-								<strong>…um am Tag besser zu sehen.</strong> <br>
-								Die Nachtlinsen sorgen dafür, dass die Radien der Hornhaut während des Schlafs acher
-								werden und sich auf die Hornhaut übertragen.
+								<div>
+									<div class="u1-card1" style='padding: 1rem;text-align: left;'>
+										<strong>…um am Tag besser zu sehen.</strong> <br>
+										Die Nachtlinsen sorgen dafür, dass die Radien der Hornhaut während des Schlafs acher
+										werden und sich auf die Hornhaut übertragen.
+									</div>
+									
+								</div>
+								
 							</div>
 						</u1-carousel>
 					</div>
@@ -81,7 +90,7 @@
 
 		<section class="cd-dark">
 			<div class="u1-width">
-				<h2 style="text-align: center">Die Vorteile: Uneingeschränkte Freiheit</h2>
+				<h2 style="text-align: center;">Die Vorteile: Uneingeschränkte Freiheit</h2>
 				<div class="u1-auto-grid cd-vorteile" style="--u1-Items-width: 15rem">
 					<div>
 						<div class="round-box"><i class="fa fa-hand-paper"></i></div>
@@ -118,7 +127,7 @@
 
 		<section class="cd-faq">
 			<div class="u1-width">
-				<h2 style="text-align: center; margin-bottom: 4rem">Die häufigsten Fragen</h2>
+				<h2 style="text-align: center; margin-bottom: 4rem;font-size: 2.3rem;">Die häufigsten Fragen</h2>
 
 				<ul class="u1-flex-gap">
 					<li class="u1-card1" style="flex: 1 0 14rem">
@@ -168,7 +177,7 @@
 					<div style="flex-grow: 1; text-align: center">
 						<input type=range min=0 max=60 oninput="document.documentElement.style.setProperty('--hsl-l', this.value+'%')">
 					</div>
-					<div style="text-align: right">
+					<div style="text-align: right;color: var(--color);">
 						<h2>TAG</h2>
 						<p>Linse beim Zubettgehen<br>einsetzen</p>
 					</div>
@@ -185,14 +194,16 @@
 		<section>
 			<div class="u1-width">
 				<div class="u1-flex-gap">
-					<div style="flex: 1 1 14rem">
-						<img src="./assets/img/flyer.png">
+					<div style="flex: 1 1 14rem;">
+						<img style='height: 30rem;' src="./assets/img/flyer.png">
 					</div>
-					<div style="flex: 1 1 14rem">
-						<div style="font-size: 2rem"><i>i</i>-<strong>Night Downloads</strong></div>
+					<div style="flex: 1 1 14rem;padding-top: 8rem;">
+						<div style="font-size: 2rem"> <span style='color:var(--color);font-weight: normal;'> <i>i</i>-Night</span> <strong>Downloads</strong></div>
 						<div style="margin: 2rem; font-size: 1rem">
-							Mehr Informationen über die i-NIGHT<br>
-							in unserem Endverbraucher-Flyer:
+							<strong>
+								Mehr Informationen über die i-NIGHT<br>
+								in unserem Endverbraucher-Flyer:
+							</strong>
 						</div>
 						<button>Download PDF <i class="fa fa-arrow-down"></i></button>
 					</div>
@@ -205,9 +216,9 @@
 				<div class="u1-flex-gap">
 					<div style="flex: 1 1 14rem">
 
-						<svg style="width:16rem; fill:currentColor"><use href="./assets/img/logo.svg#main"></use></svg>
+						<svg style="width:16rem; fill:var(--color);"><use href="./assets/img/logo.svg#main"></use></svg>
 
-						<h5>
+						<h5 style='margin-bottom: .2rem;font-size: 1.05rem;'>
 							Appenzeller Kontaktlinsen bekommen Sie einzig und allein bei Ihrem Augenoptiker oder
 							Augenarzt.
 						</h5>
@@ -227,7 +238,18 @@
 		<section>
 			<ul class="u1-flex-gap">
 				<li class="u1-card1" style="flex: 1 0 14rem">
-					<div class="-circle">1</div>
+					<div class="-circle" style='background: #a3bfc9;color: var(--color-text);'>1</div>
+					<h3 >Warum Kontaktlinsen?</h3>
+
+					<div class="-body">
+						Mosse qui doles voluptatus evellant. Test et remquam remped ut rendiam qui conet hil
+						essequi cus sant ut lacitatemped quatem consequi dis am doluptat. At abor mossed minimi,
+						aperibu scipsam ium fuga. Itaquis a quat rem ius diorrovit velluptatum eatem faccaeceped
+						untibus.
+					</div>
+				</li>
+				<li class="u1-card1" style="flex: 1 0 14rem">
+					<div class="-circle" style='background: #a3bfc9;color: var(--color-text);'>2</div>
 					<h3>Warum Kontaktlinsen?</h3>
 
 					<div class="-body">
@@ -238,7 +260,7 @@
 					</div>
 				</li>
 				<li class="u1-card1" style="flex: 1 0 14rem">
-					<div class="-circle">2</div>
+					<div class="-circle" style='background: #a3bfc9;color: var(--color-text);'>3</div>
 					<h3>Warum Kontaktlinsen?</h3>
 
 					<div class="-body">
@@ -249,18 +271,7 @@
 					</div>
 				</li>
 				<li class="u1-card1" style="flex: 1 0 14rem">
-					<div class="-circle">3</div>
-					<h3>Warum Kontaktlinsen?</h3>
-
-					<div class="-body">
-						Mosse qui doles voluptatus evellant. Test et remquam remped ut rendiam qui conet hil
-						essequi cus sant ut lacitatemped quatem consequi dis am doluptat. At abor mossed minimi,
-						aperibu scipsam ium fuga. Itaquis a quat rem ius diorrovit velluptatum eatem faccaeceped
-						untibus.
-					</div>
-				</li>
-				<li class="u1-card1" style="flex: 1 0 14rem">
-					<div class="-circle">4</div>
+					<div class="-circle" style='background: #a3bfc9;color: var(--color-text);'>4</div>
 					<h3>Warum Kontaktlinsen?</h3>
 					<div class="-body">
 						Mosse qui doles voluptatus evellant. Test et remquam remped ut rendiam qui conet hil
@@ -275,7 +286,7 @@
 		<section class="cd-dark">
 			<div class="u1-width">
 				<h2>Ja, ich möchte die i-NIGHT testen</h2>
-				<h3>Ihr Fachhändler in meiner Region soll sich mit mir in Verbindung setzen:</h3>
+				<h3 style='font-size: 1rem;margin-bottom: 3rem;'>Ihr Fachhändler in meiner Region soll sich mit mir in Verbindung setzen:</h3>
 
 				<form class="u1-auto-grid" style="--u1-Items-width: 17rem">
 					<label>
@@ -306,7 +317,7 @@
 
 		<section style="background: #fde8e9">
 			<div class="u1-width">
-				<h3>
+				<h3 style='text-align: center;padding: 2rem;padding-left:8rem;padding-right:8rem;font-size: 1rem;font-weight: bolder;'>
 					Unsere Empfehlung für die Pege von Ortho-K-Linsen für die Nacht – erkundigen Sie sich bei
 					Ihren Augenoptiker oder Augenarzt:
 				</h3>
@@ -326,7 +337,7 @@
 				</u1-carousel>
 				<div style="text-align: center; margin-top: 2rem">
 					<button style="background: transparent; border: 1px solid black; color: black">
-						Zum Produkt
+					 <strong>Zum Produkt</strong>	
 					</button>
 				</div>
 			</div>
@@ -397,8 +408,9 @@
 						Brauchtum und Handwerk werden im Appenzellerland seit jeher gelebt. Wer sich dieser Kultur
 						verschreibt, braucht Passion, Geschick, Geduld – und viel Hingebung zum Detail
 					</p>
+
 					<div style="text-align: left; width: 15rem">
-						<svg style="width:16rem; fill:currentColor"><use href="./assets/img/logo.svg#main"></use></svg>
+						<svg style="width:16rem; fill:currentColor"><use href="./assets/img/logo.svg"></use></svg>
 					</div>
 				</div>
 			</div>
