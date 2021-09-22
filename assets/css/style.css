@@ -50,8 +50,6 @@ html {
 	--color-bg: #fff;
 	--width: 51.14rem;
 	--grey: #eeeeee;
-	--line-height:
-	x--line-height: calc(.7em + .1rem);
 	--line-height: calc(1em + .34rem);
 	font-family: 'BrownStd';
 	font-size: 18.8px;
@@ -71,10 +69,7 @@ button {
 	background-image: linear-gradient(to left, #783de5, #4736f2);
 	transition: background-position 0.5s;
 	position: relative;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-top: 0.6rem;
-	padding-bottom: 0.6rem;
+	padding: 0.6rem 2rem;
 }
 button:hover:not([disabled]) {
 	background-color: #4736f2;
