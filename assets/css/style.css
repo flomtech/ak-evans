@@ -55,11 +55,20 @@ html {
 	font-size: 18.8px;
 }
 
-input,
+h2 {
+	font-size: 2.21rem;
+}
+h3 {
+	font-size: 1rem;
+	margin-bottom:0;
+}
+h3 + p { margin-top:0; }
+
+input:not([type=radio],[type=checkbox],[type=range]),
 select,
 textarea {
 	border-radius: 0;
-	box-shadow: 0 0 0.4rem #0008;
+	box-shadow: 0 0 1rem #0002;
 }
 
 button {
@@ -69,7 +78,9 @@ button {
 	background-image: linear-gradient(to left, #783de5, #4736f2);
 	transition: background-position 0.5s;
 	position: relative;
-	padding: 0.6rem 2rem;
+	padding: 0.7rem 2.8rem;
+	font-weight: bold;
+	letter-spacing: 0.1em;
 }
 button:hover:not([disabled]) {
 	background-color: #4736f2;
@@ -94,16 +105,26 @@ button:hover:not([disabled])::after {
 }
 
 section {
-	padding-top: 2.5rem;
-	padding-bottom: 2.5rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
+.u1-flex-gap { /* if used as ul */
+	padding:0
+}
 .u1-auto-grid > * {
 	position: relative;
 }
 .u1-flex-gap > * {
 	position: relative;
 }
+.u1-card1 {
+	border-radius:0;
+}
+.u1-card1 .-body {
+	padding-bottom:var(--gap);
+}
+
 
 /* classes */
 
@@ -121,14 +142,13 @@ section {
 	color: #fff;
 }
 
-.u1-card1 .-circle {
-	position: absolute;
+.cd-box-icon.cd-box-icon {
 	height: 3.2rem;
 	width: 3.2rem;
-	top: -1.3rem;
-	left: 0;
-	right: 0;
 	margin: auto;
+	margin-top:-1.6rem;
+	margin-bottom:.7rem;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -139,15 +159,25 @@ section {
 	font-size: 1.3rem;
 }
 
-.u1-card1 {
-	padding-top: 1rem;
+
+.cd-2-cols {
+	--u1-Col-gap:6rem;
+	align-items:center;
 }
+.cd-2-cols > * {
+	flex: 1 0 14rem
+}
+
+
 
 /* header  */
 #head {
 	position: relative;
 	color: #fff;
+	padding-top: 1.1rem;
 	padding-bottom: 3rem;
+	height:100vh;
+	background-image: linear-gradient(to right, var(--color-text), var(--color))
 }
 #head nav {
 	border-bottom: 1px solid;
@@ -157,10 +187,12 @@ section {
 	display: flex;
 }
 #head nav a {
-	margin-right: 2rem;
+	margin-right: 1.83rem;
 	display: block;
 	color: inherit;
 	padding: 0.5rem 0;
+	font-weight:bold;
+	letter-spacing: 0.08em;
 }
 #head nav li:last-child a {
 	margin-right: 0;
@@ -168,14 +200,16 @@ section {
 
 /*  components  */
 
-.cd-vorteile {
-	--u1-Col-gap:3rem;
+.cd-vorteile .u1-auto-grid {
+	--u1-Col-gap:3.2rem;
+	--u1-Items-width: 12rem
 }
-.cd-vorteile > div {
+.cd-vorteile .u1-auto-grid > div {
 	padding: var(--gap);
 	background-color: #17405e;
-	padding: 1.6rem;
+	padding: 1rem;
 }
+
 .cd-faq {
 	background-color: var(--grey);
 }
@@ -185,32 +219,10 @@ section {
 }
 .cd-faq .u1-flex-gap > * {
 	background: var(--color-bg);
+	box-shadow: none;
+	flex: 1 0 14rem;
 }
 
-.slide-box {
-	margin-bottom: 15rem;
-	margin-top: 15px;
-	text-align: center;
-	margin: auto;
-	border-radius: 100%;
-	padding: 4rem;
-	height: 90vh;
-	margin-bottom: 3rem;
-	background-size: 100%;
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../img/sleep.png);
-	opacity: 0.6;
-}
-
-.slide-box h2 {
-	margin-top: 80px;
-	color: white;
-}
-
-h2{
-	font-size: 2.3rem;
-}
 
 .round-box {
 	position: absolute;
@@ -232,10 +244,4 @@ h2{
 	color: white;
 	transform: rotate(90deg);
 	font-weight: normal;
-}
-
-.cd-faq .u1-flex-gap h3{
-	font-size: 1.1rem;
-	padding-top: 1.2rem;
-	padding-bottom: 0rem;
 }
